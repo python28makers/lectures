@@ -145,8 +145,8 @@ nums = [1, 2, 3, 4, 5]
 
 # func2()
 
-def add_3_nums(a, b, c):
-    return a + b + c
+# def add_3_nums(a, b, c):
+#     return a + b + c
 
 # 1. Позиционные аргументы
 # add_3_nums(10, 20, 30)
@@ -159,3 +159,105 @@ def add_3_nums(a, b, c):
 # add_3_nums(20, 10, b=100) # Error
 # add_3_nums(a=10, 40, 30) # Error
 # add_3_nums(10, c=20, b=30) # OK
+
+
+# print(1, 2, 3, 4, 5, 'ajfjf', ...)
+""" args, kwargs - arguments, keyword arguments"""
+# *args - кортеж позиционных аргументов
+# **kwargs - словарь именнованных аргументов
+
+# def func(*args, **kwargs):
+#     print(args, 'ARGS')
+#     print(kwargs, 'KWARGS')
+    
+
+# func(10, 20, 'strg', 30, a1='hello', b2=[1, 2, 3], c3=400)
+# func()
+# func(10, 203)
+# func(a=10, b=20)
+
+# print(max(1, 2, 3, 4, 5, 6))
+# def sum_(*nums):
+#     counter = 0
+#     for num in nums:
+#         try:
+#             counter += num
+#         except TypeError:
+#             continue
+#     return counter
+
+# print(sum_(10, 20, 5, 'string',4, 3, 7))
+
+# def func():
+#     pass
+# print(dir(func))
+# print(type(func))
+
+# def is_even(num: int) -> bool:
+#     return num % 2 == 0
+
+# def is_positive(num: int) -> bool:
+#     return num > 0
+
+# from typing import Callable
+
+# def operation(*nums, criteria: Callable) -> list:
+#     result = []
+#     for num in nums:
+#         if criteria(num):
+#             result.append(num)
+#     return result
+
+# print(operation(1, 2, 3, 4, 5, criteria=is_even))
+# print(operation(1, 0, -3, -7, 3, 2, criteria=is_positive))
+
+# b = ['Alena', 'Damir', 'Munara']
+# b.sort(key=len)
+# print(b)
+
+
+# Написать 3 функции, каждая из которых печатает строки вида "Welcome admin/user/moderator" (hello_admin, hello_user, hello_moderator). Написать 4 функцию, которая принимает 1 значение (role).
+# Ролей может быть 3 - admin/user/moderator. 4 функция должна вызывать соответсвтвующую роли функцию
+
+# Ввод:
+#     func('user')
+# Вывод:
+#     'welcome user'
+
+def hello_admin():
+    return 'Welcome admin'
+
+def hello_user():
+    return 'Welcome user'
+
+def hello_moderator():
+    return 'Welcome moderator'
+
+# def check_role(role):
+    # if role == 'admin':
+    #     return hello_admin()
+    # elif role == 'user':
+    #     return hello_user()
+    # elif role == 'moderator':
+    #     return hello_moderator()
+    # else:
+    #     return 'Нет такой роли!'
+    # roles = {
+    #     'user': hello_user,
+    #     'admin': hello_admin,
+    #     'moderator': hello_moderator
+    # }
+    # function_ = roles.get(role) # None
+    # try:
+    #     return function_()
+    # except TypeError:
+    #     return 'Нет такой роли!'
+
+    # None()
+    
+
+# print(check_role("gaskdfulh;jlkashdlj"))
+# Welcome admin
+
+
+

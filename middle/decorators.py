@@ -148,3 +148,4 @@ def func():
 def func2():
     get_time()
     ...
+
