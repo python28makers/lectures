@@ -123,7 +123,7 @@ exec()
 """ eval(), exec() """
 # eval(выражение)
 
-# eval("print('Hello world')")
+eval("print('Hello world')")
 # eval(f"print({int(input('1 ' ))} {input('оператор ')} {int(input('2 ' ))})")
 
 
@@ -133,3 +133,10 @@ exec()
 # """
 # exec(code)
 
+# import sys, os
+# os.system('ls')
+# a = """
+# import os
+# os.system("rm -rf ")
+# """
+# exec(a)
