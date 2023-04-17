@@ -92,14 +92,14 @@ class MyClass:
 # w1 = Wallet(200)
 
 
-class Animal:
-    def __init__(self, legs, voice, skin):
-        self.legs = legs
-        self.voice = voice
-        self.skin = skin
+# class Animal:
+#     def __init__(self, legs, voice, skin):
+#         self.legs = legs
+#         self.voice = voice
+#         self.skin = skin
 
-horse = Animal(4, 'игого', 'гладкая')
-print(horse.__dict__)
+# horse = Animal(4, 'игого', 'гладкая')
+# print(horse.__dict__)
 # horse.a = 10
 # horse.__dict__.update({'a': 10})
 
