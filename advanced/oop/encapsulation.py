@@ -41,6 +41,9 @@
 Приватные методы и атрибуты доступны только внутри того класса, где они определены
 """
 
+from logging import raiseExceptions
+
+
 class EncapsulatedClass:
     public = 'public'
     _protected = 'protected'
@@ -138,4 +141,29 @@ class Light:
 # print(light.is_on())
 
 
+# class MyClass:
+#     pub = 'public'
+#     _protected = 'protected'
+#     __private = 'private'
 
+    # def method(self):
+    #     # print(self.pub)
+    #     # print(self._protected)
+    #     print(self.__private)
+
+
+# class Child(MyClass):
+#     def child_method(self):
+        # print(self.pub)
+        # print(self._protected)
+        # print(self.__private)
+        # print(self._MyClass__private)
+        
+
+# obj = MyClass()
+# ch = Child()
+# # print(obj._protected) # Работает, но так делать нельзя
+# # print(obj.pub)
+# obj.method()
+# ch.child_method()
+# print(obj.__private)
