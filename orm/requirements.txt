@@ -1,0 +1,4 @@
+sqlmodel
+#orm
+psycopg2-binary
+# driver for postgres
